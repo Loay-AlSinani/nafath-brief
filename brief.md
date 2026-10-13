@@ -29,5 +29,6 @@ A Software Bill of Materials (SBOM) is a formal record of software components an
 Resource: NTIA - The Minimum Elements for a Software Bill of Materials (SBOM) - https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
 
 ## Misconception in My Track
-
+A common misconception is that upgrading Log4j to version 2.15.0 completely fixed every security issue related to Log4Shell. However, Apache reported that the fix for CVE-2021-44228 was incomplete in certain non-default configurations. This led to the related vulnerability CVE-2021-45046. The lesson is that organizations should not assume one security update resolves every related risk. They should review official advisories, identify the versions they use, and apply the appropriate fixes. Security teams should also confirm that affected applications are actually using the updated components.
 ## Open Question
+How can organizations automatically discover vulnerable third-party software components across their systems and confirm that the correct security updates have been applied?
